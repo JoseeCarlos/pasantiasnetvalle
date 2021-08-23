@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SWADNETPAS" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:63193/SWADNETPAS.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:63193/SWADNETPAS.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost:63193/SWADNETPAS.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISWADNETPAS_Adicionar_PPostulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PPostulacion" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Adicionar_PPostulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PPostulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Adicionar_PPostulacion_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/" name="detail" element="q1:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPostulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPostulacion" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPostulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPostulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPostulacion_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/" name="detail" element="q2:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPostulacion_EstadoAprobado_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPostulacion_EstadoAprobado" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPostulacion_EstadoAprobado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPostulacion_EstadoAprobadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPostulacion_EstadoAprobado_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/" name="detail" element="q3:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPostulacion_EstadoObservado_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPostulacion_EstadoObservado" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPostulacion_EstadoObservado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPostulacion_EstadoObservadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPostulacion_EstadoObservado_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/" name="detail" element="q4:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/" name="detail" element="q5:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_Datos_Soilicitud_Id_Estudiante_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_Datos_Soilicitud_Id_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_Datos_Soilicitud_Id_Estudiante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_Datos_Soilicitud_Id_EstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_Datos_Soilicitud_Id_Estudiante_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/" name="detail" element="q6:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Estado_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Estado" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Estado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_EstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Estado_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/" name="detail" element="q7:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Id_Postulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Id_Postulacion" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Id_Postulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Id_PostulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Id_Postulacion_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/" name="detail" element="q8:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Id_Estudiante_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Id_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Id_Estudiante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Id_EstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Id_Estudiante_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/" name="detail" element="q9:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Id_Estudiante_Verificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Id_Estudiante_Verificar" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Id_Estudiante_Verificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Id_Estudiante_VerificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Id_Estudiante_Verificar_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/" name="detail" element="q10:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Id_SedeAcademica_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Id_SedeAcademica" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Id_SedeAcademica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Id_SedeAcademicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPostulacion_Id_SedeAcademica_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/" name="detail" element="q11:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_VerificarPostulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarPostulacion" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_VerificarPostulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarPostulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_VerificarPostulacion_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/" name="detail" element="q12:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PModalidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PModalidad" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PModalidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PModalidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PModalidad_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/" name="detail" element="q13:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Adicionar_PModalidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PModalidad" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Adicionar_PModalidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PModalidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Adicionar_PModalidad_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/" name="detail" element="q14:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PModalidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PModalidad" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PModalidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PModalidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PModalidad_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/" name="detail" element="q15:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PModalidad_Id_Modalidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PModalidad_Id_Modalidad" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PModalidad_Id_Modalidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PModalidad_Id_ModalidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PModalidad_Id_Modalidad_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/" name="detail" element="q16:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Adicionar_PInstitucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PInstitucion" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Adicionar_PInstitucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PInstitucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Adicionar_PInstitucion_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/" name="detail" element="q17:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PInstitucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PInstitucion" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PInstitucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PInstitucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PInstitucion_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/" name="detail" element="q18:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PInstitucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucion" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PInstitucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PInstitucion_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/" name="detail" element="q19:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PInstitucion_Id_Institucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucion_Id_Institucion" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PInstitucion_Id_Institucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucion_Id_InstitucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PInstitucion_Id_Institucion_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.datacontract.org/2004/07/" name="detail" element="q20:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PInstitucion_NombreInstitucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucion_NombreInstitucion" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PInstitucion_NombreInstitucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucion_NombreInstitucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PInstitucion_NombreInstitucion_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.datacontract.org/2004/07/" name="detail" element="q21:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Adicionar_PPasantia_InputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PPasantia" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Adicionar_PPasantia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PPasantiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Adicionar_PPasantia_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.datacontract.org/2004/07/" name="detail" element="q22:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPasantia_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPasantia" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPasantia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPasantiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPasantia_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q23="http://schemas.datacontract.org/2004/07/" name="detail" element="q23:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPasantia_FechaInicio_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPasantia_FechaInicio" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPasantia_FechaInicio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPasantia_FechaInicioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Actualizar_PPasantia_FechaInicio_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.datacontract.org/2004/07/" name="detail" element="q24:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPasantia_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPasantia" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPasantia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPasantiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPasantia_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q25="http://schemas.datacontract.org/2004/07/" name="detail" element="q25:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPasantia_Id_Pasantia_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPasantia_Id_Pasantia" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPasantia_Id_Pasantia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPasantia_Id_PasantiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPasantia_Id_Pasantia_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.datacontract.org/2004/07/" name="detail" element="q26:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPasantia_Id_Postulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPasantia_Id_Postulacion" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPasantia_Id_Postulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPasantia_Id_PostulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPasantia_Id_Postulacion_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.datacontract.org/2004/07/" name="detail" element="q27:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPasantia_Finalizado_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPasantia_Finalizado" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPasantia_Finalizado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPasantia_FinalizadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_Obtener_PPasantia_Finalizado_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.datacontract.org/2004/07/" name="detail" element="q28:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_ObtenerPasantia_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPasantia" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_ObtenerPasantia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPasantiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_ObtenerPasantia_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q29="http://schemas.datacontract.org/2004/07/" name="detail" element="q29:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_ObtenerPasantiaFecha_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPasantiaFecha" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_ObtenerPasantiaFecha_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPasantiaFechaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNETPAS_ObtenerPasantiaFecha_EDefectoADFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.datacontract.org/2004/07/" name="detail" element="q30:EDefectoAD" />
+  </wsdl:message>
+  <wsdl:portType name="ISWADNETPAS">
+    <wsdl:operation name="Adicionar_PPostulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Adicionar_PPostulacion" message="tns:ISWADNETPAS_Adicionar_PPostulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Adicionar_PPostulacionResponse" message="tns:ISWADNETPAS_Adicionar_PPostulacion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Adicionar_PPostulacionEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Adicionar_PPostulacion_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPostulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPostulacion" message="tns:ISWADNETPAS_Actualizar_PPostulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPostulacionResponse" message="tns:ISWADNETPAS_Actualizar_PPostulacion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPostulacionEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Actualizar_PPostulacion_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPostulacion_EstadoAprobado">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPostulacion_EstadoAprobado" message="tns:ISWADNETPAS_Actualizar_PPostulacion_EstadoAprobado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPostulacion_EstadoAprobadoResponse" message="tns:ISWADNETPAS_Actualizar_PPostulacion_EstadoAprobado_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPostulacion_EstadoAprobadoEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Actualizar_PPostulacion_EstadoAprobado_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPostulacion_EstadoObservado">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPostulacion_EstadoObservado" message="tns:ISWADNETPAS_Actualizar_PPostulacion_EstadoObservado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPostulacion_EstadoObservadoResponse" message="tns:ISWADNETPAS_Actualizar_PPostulacion_EstadoObservado_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPostulacion_EstadoObservadoEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Actualizar_PPostulacion_EstadoObservado_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion" message="tns:ISWADNETPAS_Obtener_PPostulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacionResponse" message="tns:ISWADNETPAS_Obtener_PPostulacion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacionEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PPostulacion_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_Datos_Soilicitud_Id_Estudiante">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_Datos_Soilicitud_Id_Estudiante" message="tns:ISWADNETPAS_Obtener_Datos_Soilicitud_Id_Estudiante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_Datos_Soilicitud_Id_EstudianteResponse" message="tns:ISWADNETPAS_Obtener_Datos_Soilicitud_Id_Estudiante_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_Datos_Soilicitud_Id_EstudianteEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_Datos_Soilicitud_Id_Estudiante_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Estado">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Estado" message="tns:ISWADNETPAS_Obtener_PPostulacion_Estado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_EstadoResponse" message="tns:ISWADNETPAS_Obtener_PPostulacion_Estado_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_EstadoEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PPostulacion_Estado_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Id_Postulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_Postulacion" message="tns:ISWADNETPAS_Obtener_PPostulacion_Id_Postulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_PostulacionResponse" message="tns:ISWADNETPAS_Obtener_PPostulacion_Id_Postulacion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_PostulacionEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PPostulacion_Id_Postulacion_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Id_Estudiante">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_Estudiante" message="tns:ISWADNETPAS_Obtener_PPostulacion_Id_Estudiante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_EstudianteResponse" message="tns:ISWADNETPAS_Obtener_PPostulacion_Id_Estudiante_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_EstudianteEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PPostulacion_Id_Estudiante_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Id_Estudiante_Verificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_Estudiante_Verificar" message="tns:ISWADNETPAS_Obtener_PPostulacion_Id_Estudiante_Verificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_Estudiante_VerificarResponse" message="tns:ISWADNETPAS_Obtener_PPostulacion_Id_Estudiante_Verificar_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_Estudiante_VerificarEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PPostulacion_Id_Estudiante_Verificar_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Id_SedeAcademica">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_SedeAcademica" message="tns:ISWADNETPAS_Obtener_PPostulacion_Id_SedeAcademica_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_SedeAcademicaResponse" message="tns:ISWADNETPAS_Obtener_PPostulacion_Id_SedeAcademica_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_SedeAcademicaEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PPostulacion_Id_SedeAcademica_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarPostulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/VerificarPostulacion" message="tns:ISWADNETPAS_VerificarPostulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/VerificarPostulacionResponse" message="tns:ISWADNETPAS_VerificarPostulacion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/VerificarPostulacionEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_VerificarPostulacion_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PModalidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PModalidad" message="tns:ISWADNETPAS_Actualizar_PModalidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PModalidadResponse" message="tns:ISWADNETPAS_Actualizar_PModalidad_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PModalidadEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Actualizar_PModalidad_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Adicionar_PModalidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Adicionar_PModalidad" message="tns:ISWADNETPAS_Adicionar_PModalidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Adicionar_PModalidadResponse" message="tns:ISWADNETPAS_Adicionar_PModalidad_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Adicionar_PModalidadEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Adicionar_PModalidad_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PModalidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PModalidad" message="tns:ISWADNETPAS_Obtener_PModalidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PModalidadResponse" message="tns:ISWADNETPAS_Obtener_PModalidad_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PModalidadEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PModalidad_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PModalidad_Id_Modalidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PModalidad_Id_Modalidad" message="tns:ISWADNETPAS_Obtener_PModalidad_Id_Modalidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PModalidad_Id_ModalidadResponse" message="tns:ISWADNETPAS_Obtener_PModalidad_Id_Modalidad_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PModalidad_Id_ModalidadEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PModalidad_Id_Modalidad_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Adicionar_PInstitucion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Adicionar_PInstitucion" message="tns:ISWADNETPAS_Adicionar_PInstitucion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Adicionar_PInstitucionResponse" message="tns:ISWADNETPAS_Adicionar_PInstitucion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Adicionar_PInstitucionEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Adicionar_PInstitucion_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PInstitucion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PInstitucion" message="tns:ISWADNETPAS_Actualizar_PInstitucion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PInstitucionResponse" message="tns:ISWADNETPAS_Actualizar_PInstitucion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PInstitucionEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Actualizar_PInstitucion_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PInstitucion" message="tns:ISWADNETPAS_Obtener_PInstitucion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PInstitucionResponse" message="tns:ISWADNETPAS_Obtener_PInstitucion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PInstitucionEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PInstitucion_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucion_Id_Institucion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PInstitucion_Id_Institucion" message="tns:ISWADNETPAS_Obtener_PInstitucion_Id_Institucion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PInstitucion_Id_InstitucionResponse" message="tns:ISWADNETPAS_Obtener_PInstitucion_Id_Institucion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PInstitucion_Id_InstitucionEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PInstitucion_Id_Institucion_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucion_NombreInstitucion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PInstitucion_NombreInstitucion" message="tns:ISWADNETPAS_Obtener_PInstitucion_NombreInstitucion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PInstitucion_NombreInstitucionResponse" message="tns:ISWADNETPAS_Obtener_PInstitucion_NombreInstitucion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PInstitucion_NombreInstitucionEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PInstitucion_NombreInstitucion_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Adicionar_PPasantia">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Adicionar_PPasantia" message="tns:ISWADNETPAS_Adicionar_PPasantia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Adicionar_PPasantiaResponse" message="tns:ISWADNETPAS_Adicionar_PPasantia_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Adicionar_PPasantiaEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Adicionar_PPasantia_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPasantia">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPasantia" message="tns:ISWADNETPAS_Actualizar_PPasantia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPasantiaResponse" message="tns:ISWADNETPAS_Actualizar_PPasantia_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPasantiaEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Actualizar_PPasantia_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPasantia_FechaInicio">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPasantia_FechaInicio" message="tns:ISWADNETPAS_Actualizar_PPasantia_FechaInicio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPasantia_FechaInicioResponse" message="tns:ISWADNETPAS_Actualizar_PPasantia_FechaInicio_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Actualizar_PPasantia_FechaInicioEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Actualizar_PPasantia_FechaInicio_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPasantia">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia" message="tns:ISWADNETPAS_Obtener_PPasantia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPasantiaResponse" message="tns:ISWADNETPAS_Obtener_PPasantia_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPasantiaEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PPasantia_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPasantia_Id_Pasantia">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia_Id_Pasantia" message="tns:ISWADNETPAS_Obtener_PPasantia_Id_Pasantia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia_Id_PasantiaResponse" message="tns:ISWADNETPAS_Obtener_PPasantia_Id_Pasantia_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia_Id_PasantiaEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PPasantia_Id_Pasantia_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPasantia_Id_Postulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia_Id_Postulacion" message="tns:ISWADNETPAS_Obtener_PPasantia_Id_Postulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia_Id_PostulacionResponse" message="tns:ISWADNETPAS_Obtener_PPasantia_Id_Postulacion_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia_Id_PostulacionEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PPasantia_Id_Postulacion_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPasantia_Finalizado">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia_Finalizado" message="tns:ISWADNETPAS_Obtener_PPasantia_Finalizado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia_FinalizadoResponse" message="tns:ISWADNETPAS_Obtener_PPasantia_Finalizado_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia_FinalizadoEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_Obtener_PPasantia_Finalizado_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPasantia">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/ObtenerPasantia" message="tns:ISWADNETPAS_ObtenerPasantia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/ObtenerPasantiaResponse" message="tns:ISWADNETPAS_ObtenerPasantia_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/ObtenerPasantiaEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_ObtenerPasantia_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPasantiaFecha">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNETPAS/ObtenerPasantiaFecha" message="tns:ISWADNETPAS_ObtenerPasantiaFecha_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNETPAS/ObtenerPasantiaFechaResponse" message="tns:ISWADNETPAS_ObtenerPasantiaFecha_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWADNETPAS/ObtenerPasantiaFechaEDefectoADFault" name="EDefectoADFault" message="tns:ISWADNETPAS_ObtenerPasantiaFecha_EDefectoADFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISWADNETPAS" type="tns:ISWADNETPAS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Adicionar_PPostulacion">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Adicionar_PPostulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPostulacion">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Actualizar_PPostulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPostulacion_EstadoAprobado">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Actualizar_PPostulacion_EstadoAprobado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPostulacion_EstadoObservado">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Actualizar_PPostulacion_EstadoObservado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_Datos_Soilicitud_Id_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_Datos_Soilicitud_Id_Estudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Estado">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Estado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Id_Postulacion">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_Postulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Id_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_Estudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Id_Estudiante_Verificar">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_Estudiante_Verificar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Id_SedeAcademica">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PPostulacion_Id_SedeAcademica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarPostulacion">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/VerificarPostulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PModalidad">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Actualizar_PModalidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Adicionar_PModalidad">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Adicionar_PModalidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PModalidad">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PModalidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PModalidad_Id_Modalidad">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PModalidad_Id_Modalidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Adicionar_PInstitucion">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Adicionar_PInstitucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PInstitucion">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Actualizar_PInstitucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucion">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PInstitucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucion_Id_Institucion">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PInstitucion_Id_Institucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucion_NombreInstitucion">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PInstitucion_NombreInstitucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Adicionar_PPasantia">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Adicionar_PPasantia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPasantia">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Actualizar_PPasantia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPasantia_FechaInicio">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Actualizar_PPasantia_FechaInicio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPasantia">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPasantia_Id_Pasantia">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia_Id_Pasantia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPasantia_Id_Postulacion">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia_Id_Postulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPasantia_Finalizado">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/Obtener_PPasantia_Finalizado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPasantia">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/ObtenerPasantia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPasantiaFecha">
+      <soap:operation soapAction="http://tempuri.org/ISWADNETPAS/ObtenerPasantiaFecha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="EDefectoADFault">
+        <soap:fault use="literal" name="EDefectoADFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SWADNETPAS">
+    <wsdl:port name="BasicHttpBinding_ISWADNETPAS" binding="tns:BasicHttpBinding_ISWADNETPAS">
+      <soap:address location="http://localhost:63193/SWADNETPAS.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

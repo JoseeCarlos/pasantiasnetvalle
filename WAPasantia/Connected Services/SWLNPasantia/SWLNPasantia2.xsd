@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:54823/SWLNPasantia.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+  <xs:element name="Adicionar_PPostulacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_Institucion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Id_Modalidad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Id_SedeAcademica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FechaAceptacion" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Adicionar_PPostulacionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_PPostulacion_EstadoAprobado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Postulacion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_PPostulacion_EstadoAprobadoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_PPostulacion_EstadoObservado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Postulacion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_PPostulacion_EstadoObservadoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_PPostulacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Postulacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_Institucion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Id_Modalidad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Id_SedeAcademica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_PPostulacionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PPostulacion">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PPostulacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_PPostulacionResult" nillable="true" type="q1:ArrayOfEPPostulacionCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PPostulacion_Estado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PPostulacion_EstadoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_PPostulacion_EstadoResult" nillable="true" type="q2:ArrayOfEPPostulacionCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PPostulacion_Id_Postulacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Postulacion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PPostulacion_Id_PostulacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_PPostulacion_Id_PostulacionResult" nillable="true" type="q3:EPPostulacionCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PPostulacion_Id_Postulacion2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Postulacion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PPostulacion_Id_Postulacion2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_PPostulacion_Id_Postulacion2Result" nillable="true" type="q4:EPPostulacionCompleja2" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarEstududiante_NombreCompleto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NombreCompleto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarEstududiante_NombreCompletoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="BuscarEstududiante_NombreCompletoResult" nillable="true" type="q5:ArrayOfEPPostulacionCompleja3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerificarPostulacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerificarPostulacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VerificarPostulacionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_PModalidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Modalidad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NombreModalidad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Id_Emp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_PModalidadResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Adicionar_PModalidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NombreModalidad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Id_Emp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Adicionar_PModalidadResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PModalidad">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PModalidadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_PModalidadResult" nillable="true" type="q6:ArrayOfEPModalidadSimple" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PModalidad_Id_Modalidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Modalidad" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PModalidad_Id_ModalidadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_PModalidad_Id_ModalidadResult" nillable="true" type="q7:EPModalidadSimple" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Adicionar_PInstitucion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NombreResponsable" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PrimerApellidoResponsable" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SegundoApellidoResponsable" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CargoResponsable" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NombreInstitucion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DireccionInstitucion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TelefonoInstitucion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CorreoInstitucion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Id_Ciudad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Adicionar_PInstitucionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_PInstitucion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Institucion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NombreResponsable" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PrimerApellidoResponsable" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SegundoApellidoResponsable" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CargoResponsable" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NombreInstitucion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DireccionInstitucion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TelefonoInstitucion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CorreoInstitucion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Id_Ciudad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_PInstitucionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PInstitucion">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PInstitucionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_PInstitucionResult" nillable="true" type="q8:ArrayOfEPInstitucionCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PInstitucion_Id_Institucion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Institucion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PInstitucion_Id_InstitucionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_PInstitucion_Id_InstitucionResult" nillable="true" type="q9:EPInstitucionCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PInstitucion_NombreInstitucion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NombreInstitucion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PInstitucion_NombreInstitucionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_PInstitucion_NombreInstitucionResult" nillable="true" type="q10:EPInstitucionCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PInstitucionCorta">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_PInstitucionCortaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_PInstitucionCortaResult" nillable="true" type="q11:ArrayOfEPInstitucionCompleja2" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_NEstudiante">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_NEstudianteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_NEstudianteResult" nillable="true" type="q12:ArrayOfENEstudiante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_NEstudiante_Id_Estudiante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_NEstudiante_Id_EstudianteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_NEstudiante_Id_EstudianteResult" nillable="true" type="q13:ENEstudiante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_NEstudiante_NCarrera_Id_Estudiante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_NEstudiante_NCarrera_Id_EstudianteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_NEstudiante_NCarrera_Id_EstudianteResult" nillable="true" type="q14:EPEstudianteCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InicioSesion_CodigoEstudiante_Contrasena_Estudiante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Codigo_Estudiante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password_Estudiante" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InicioSesion_CodigoEstudiante_Contrasena_EstudianteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InicioSesion_CodigoEstudiante_Contrasena_EstudianteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerificarPasantia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerificarPasantiaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VerificarPasantiaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_NEstudiante_NDirectorCarrera_Id_Estudiante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_NEstudiante_NDirectorCarrera_Id_EstudianteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_NEstudiante_NDirectorCarrera_Id_EstudianteResult" nillable="true" type="q15:EPEstudianteDirectorCarreraCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Verificar_FechaInicio_Id_Estudiante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Verificar_FechaInicio_Id_EstudianteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Verificar_FechaInicio_Id_EstudianteResult" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Adicionar_PPasantia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Postulacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Horas" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Adicionar_PPasantiaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Verificar_FechaInicio_Id_Estudiante_bool">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Verificar_FechaInicio_Id_Estudiante_boolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Verificar_FechaInicio_Id_Estudiante_boolResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_Datos_Soilicitud_Id_Estudiante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_Datos_Soilicitud_Id_EstudianteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_Datos_Soilicitud_Id_EstudianteResult" nillable="true" type="q16:EPSolicitud" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_PPasantia_FechaInicio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="epPasantiaSimple" nillable="true" type="q17:EPPasantiaSimple" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_PPasantia_FechaInicioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPasantias">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPasantiasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="ObtenerPasantiasResult" nillable="true" type="q18:ArrayOfPasantiasCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPasantiasFecha">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fecha1" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="fecha2" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPasantiasFechaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="ObtenerPasantiasFechaResult" nillable="true" type="q19:ArrayOfPasantiasCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerFacultas">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerFacultasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="ObtenerFacultasResult" nillable="true" type="q20:ArrayOfFacultadCom" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerFacultasFa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="facultad" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerFacultasFaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="ObtenerFacultasFaResult" nillable="true" type="q21:ArrayOfFacultadCom" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCiudad">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCiudadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="ObtenerCiudadResult" nillable="true" type="q22:ArrayOfCiudadCom" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

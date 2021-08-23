@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SWADNetValle" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52966/SWADNetValle.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52966/SWADNetValle.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52966/SWADNetValle.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISWADNetValle_Obtener_NCiudad_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NCiudad" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NCiudad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NCiudadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NCiudad_Id_Ciudad_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NCiudad_Id_Ciudad" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NCiudad_Id_Ciudad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NCiudad_Id_CiudadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_ObtenerCiudad_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCiudad" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_ObtenerCiudad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCiudadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_ObtenerFacultad_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFacultad" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_ObtenerFacultad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFacultadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_ObtenerFacultasFa_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFacultasFa" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_ObtenerFacultasFa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFacultasFaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NCarrera_Id_Carrera_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NCarrera_Id_Carrera" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NCarrera_Id_Carrera_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NCarrera_Id_CarreraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NEmpleadoSimple_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEmpleadoSimple" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NEmpleadoSimple_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEmpleadoSimpleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NEmpleado_Id_Empleado_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEmpleado_Id_Empleado" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NEmpleado_Id_Empleado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEmpleado_Id_EmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NEstudiante_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEstudiante" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NEstudiante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NEstudiante_Id_Estudiante_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEstudiante_Id_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NEstudiante_Id_Estudiante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEstudiante_Id_EstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_InicioSesion_CodigoEstudiante_Contrasena_Estudiante_InputMessage">
+    <wsdl:part name="parameters" element="tns:InicioSesion_CodigoEstudiante_Contrasena_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_InicioSesion_CodigoEstudiante_Contrasena_Estudiante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InicioSesion_CodigoEstudiante_Contrasena_EstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_VerificarPasantia_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarPasantia" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_VerificarPasantia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarPasantiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_BuscarEstudiante_NombreCompleto_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarEstudiante_NombreCompleto" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_BuscarEstudiante_NombreCompleto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarEstudiante_NombreCompletoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NSedeAcademica_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NSedeAcademica" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NSedeAcademica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NSedeAcademicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NSedeAcademica_Id_SedeAcademica_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NSedeAcademica_Id_SedeAcademica" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NSedeAcademica_Id_SedeAcademica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NSedeAcademica_Id_SedeAcademicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NCargo_Id_Cargo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NCargo_Id_Cargo" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NCargo_Id_Cargo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NCargo_Id_CargoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NFacultad_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NFacultad" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NFacultad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NFacultadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NFacultad_Id_Facultad_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NFacultad_Id_Facultad" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NFacultad_Id_Facultad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NFacultad_Id_FacultadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NDirectorCarrera_Id_DirectorCarrera_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NDirectorCarrera_Id_DirectorCarrera" />
+  </wsdl:message>
+  <wsdl:message name="ISWADNetValle_Obtener_NDirectorCarrera_Id_DirectorCarrera_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NDirectorCarrera_Id_DirectorCarreraResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISWADNetValle">
+    <wsdl:operation name="Obtener_NCiudad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NCiudad" message="tns:ISWADNetValle_Obtener_NCiudad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NCiudadResponse" message="tns:ISWADNetValle_Obtener_NCiudad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NCiudad_Id_Ciudad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NCiudad_Id_Ciudad" message="tns:ISWADNetValle_Obtener_NCiudad_Id_Ciudad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NCiudad_Id_CiudadResponse" message="tns:ISWADNetValle_Obtener_NCiudad_Id_Ciudad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCiudad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/ObtenerCiudad" message="tns:ISWADNetValle_ObtenerCiudad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/ObtenerCiudadResponse" message="tns:ISWADNetValle_ObtenerCiudad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerFacultad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/ObtenerFacultad" message="tns:ISWADNetValle_ObtenerFacultad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/ObtenerFacultadResponse" message="tns:ISWADNetValle_ObtenerFacultad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerFacultasFa">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/ObtenerFacultasFa" message="tns:ISWADNetValle_ObtenerFacultasFa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/ObtenerFacultasFaResponse" message="tns:ISWADNetValle_ObtenerFacultasFa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NCarrera_Id_Carrera">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NCarrera_Id_Carrera" message="tns:ISWADNetValle_Obtener_NCarrera_Id_Carrera_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NCarrera_Id_CarreraResponse" message="tns:ISWADNetValle_Obtener_NCarrera_Id_Carrera_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEmpleadoSimple">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NEmpleadoSimple" message="tns:ISWADNetValle_Obtener_NEmpleadoSimple_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NEmpleadoSimpleResponse" message="tns:ISWADNetValle_Obtener_NEmpleadoSimple_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEmpleado_Id_Empleado">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NEmpleado_Id_Empleado" message="tns:ISWADNetValle_Obtener_NEmpleado_Id_Empleado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NEmpleado_Id_EmpleadoResponse" message="tns:ISWADNetValle_Obtener_NEmpleado_Id_Empleado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEstudiante">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NEstudiante" message="tns:ISWADNetValle_Obtener_NEstudiante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NEstudianteResponse" message="tns:ISWADNetValle_Obtener_NEstudiante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEstudiante_Id_Estudiante">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NEstudiante_Id_Estudiante" message="tns:ISWADNetValle_Obtener_NEstudiante_Id_Estudiante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NEstudiante_Id_EstudianteResponse" message="tns:ISWADNetValle_Obtener_NEstudiante_Id_Estudiante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InicioSesion_CodigoEstudiante_Contrasena_Estudiante">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/InicioSesion_CodigoEstudiante_Contrasena_Estudiante" message="tns:ISWADNetValle_InicioSesion_CodigoEstudiante_Contrasena_Estudiante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/InicioSesion_CodigoEstudiante_Contrasena_EstudianteResponse" message="tns:ISWADNetValle_InicioSesion_CodigoEstudiante_Contrasena_Estudiante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarPasantia">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/VerificarPasantia" message="tns:ISWADNetValle_VerificarPasantia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/VerificarPasantiaResponse" message="tns:ISWADNetValle_VerificarPasantia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEstudiante_NombreCompleto">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/BuscarEstudiante_NombreCompleto" message="tns:ISWADNetValle_BuscarEstudiante_NombreCompleto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/BuscarEstudiante_NombreCompletoResponse" message="tns:ISWADNetValle_BuscarEstudiante_NombreCompleto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NSedeAcademica">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NSedeAcademica" message="tns:ISWADNetValle_Obtener_NSedeAcademica_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NSedeAcademicaResponse" message="tns:ISWADNetValle_Obtener_NSedeAcademica_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NSedeAcademica_Id_SedeAcademica">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NSedeAcademica_Id_SedeAcademica" message="tns:ISWADNetValle_Obtener_NSedeAcademica_Id_SedeAcademica_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NSedeAcademica_Id_SedeAcademicaResponse" message="tns:ISWADNetValle_Obtener_NSedeAcademica_Id_SedeAcademica_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NCargo_Id_Cargo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NCargo_Id_Cargo" message="tns:ISWADNetValle_Obtener_NCargo_Id_Cargo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NCargo_Id_CargoResponse" message="tns:ISWADNetValle_Obtener_NCargo_Id_Cargo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NFacultad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NFacultad" message="tns:ISWADNetValle_Obtener_NFacultad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NFacultadResponse" message="tns:ISWADNetValle_Obtener_NFacultad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NFacultad_Id_Facultad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NFacultad_Id_Facultad" message="tns:ISWADNetValle_Obtener_NFacultad_Id_Facultad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NFacultad_Id_FacultadResponse" message="tns:ISWADNetValle_Obtener_NFacultad_Id_Facultad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NDirectorCarrera_Id_DirectorCarrera">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NDirectorCarrera_Id_DirectorCarrera" message="tns:ISWADNetValle_Obtener_NDirectorCarrera_Id_DirectorCarrera_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWADNetValle/Obtener_NDirectorCarrera_Id_DirectorCarreraResponse" message="tns:ISWADNetValle_Obtener_NDirectorCarrera_Id_DirectorCarrera_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISWADNetValle" type="tns:ISWADNetValle">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Obtener_NCiudad">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/Obtener_NCiudad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NCiudad_Id_Ciudad">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/Obtener_NCiudad_Id_Ciudad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCiudad">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/ObtenerCiudad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerFacultad">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/ObtenerFacultad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerFacultasFa">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/ObtenerFacultasFa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NCarrera_Id_Carrera">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/Obtener_NCarrera_Id_Carrera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEmpleadoSimple">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/Obtener_NEmpleadoSimple" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEmpleado_Id_Empleado">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/Obtener_NEmpleado_Id_Empleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEstudiante">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/Obtener_NEstudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEstudiante_Id_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/Obtener_NEstudiante_Id_Estudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InicioSesion_CodigoEstudiante_Contrasena_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/InicioSesion_CodigoEstudiante_Contrasena_Estudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarPasantia">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/VerificarPasantia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEstudiante_NombreCompleto">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/BuscarEstudiante_NombreCompleto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NSedeAcademica">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/Obtener_NSedeAcademica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NSedeAcademica_Id_SedeAcademica">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/Obtener_NSedeAcademica_Id_SedeAcademica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NCargo_Id_Cargo">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/Obtener_NCargo_Id_Cargo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NFacultad">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/Obtener_NFacultad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NFacultad_Id_Facultad">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/Obtener_NFacultad_Id_Facultad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NDirectorCarrera_Id_DirectorCarrera">
+      <soap:operation soapAction="http://tempuri.org/ISWADNetValle/Obtener_NDirectorCarrera_Id_DirectorCarrera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SWADNetValle">
+    <wsdl:port name="BasicHttpBinding_ISWADNetValle" binding="tns:BasicHttpBinding_ISWADNetValle">
+      <soap:address location="http://localhost:52966/SWADNetValle.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

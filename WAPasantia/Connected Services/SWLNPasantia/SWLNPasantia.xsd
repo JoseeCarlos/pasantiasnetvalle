@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfEPPostulacionCompleja">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EPPostulacionCompleja" nillable="true" type="tns:EPPostulacionCompleja" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEPPostulacionCompleja" nillable="true" type="tns:ArrayOfEPPostulacionCompleja" />
+  <xs:complexType name="EPPostulacionCompleja">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Correo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaAceptacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Institucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Modalidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Postulacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_SedeAcademica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCarrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCompleto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreInstitucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreModalidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreSedeAcademica" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EPPostulacionCompleja" nillable="true" type="tns:EPPostulacionCompleja" />
+  <xs:complexType name="EPPostulacionCompleja2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Apellidos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CedulaIdentidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Celular" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CiudadInstitucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Correo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CorreoInstitucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DireccionInstitucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmitidoEn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Institucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Postulacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreEncargado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreInstitucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelefonoInstitucion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EPPostulacionCompleja2" nillable="true" type="tns:EPPostulacionCompleja2" />
+  <xs:complexType name="ArrayOfEPPostulacionCompleja3">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EPPostulacionCompleja3" nillable="true" type="tns:EPPostulacionCompleja3" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEPPostulacionCompleja3" nillable="true" type="tns:ArrayOfEPPostulacionCompleja3" />
+  <xs:complexType name="EPPostulacionCompleja3">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Correo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Postulacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCarrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCompleto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreInstitucion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EPPostulacionCompleja3" nillable="true" type="tns:EPPostulacionCompleja3" />
+  <xs:complexType name="ArrayOfEPModalidadSimple">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EPModalidadSimple" nillable="true" type="tns:EPModalidadSimple" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEPModalidadSimple" nillable="true" type="tns:ArrayOfEPModalidadSimple" />
+  <xs:complexType name="EPModalidadSimple">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Emp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Modalidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreModalidad" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EPModalidadSimple" nillable="true" type="tns:EPModalidadSimple" />
+  <xs:complexType name="ArrayOfEPInstitucionCompleja">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EPInstitucionCompleja" nillable="true" type="tns:EPInstitucionCompleja" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEPInstitucionCompleja" nillable="true" type="tns:ArrayOfEPInstitucionCompleja" />
+  <xs:complexType name="EPInstitucionCompleja">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CargoResponsable" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CorreoInstitucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DireccionInstitucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Institucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCiudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreInstitucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreResponsable" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimerApellidoResponsable" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SegundoApellidoResponsable" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelefonoInstitucion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EPInstitucionCompleja" nillable="true" type="tns:EPInstitucionCompleja" />
+  <xs:complexType name="ArrayOfEPInstitucionCompleja2">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EPInstitucionCompleja2" nillable="true" type="tns:EPInstitucionCompleja2" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEPInstitucionCompleja2" nillable="true" type="tns:ArrayOfEPInstitucionCompleja2" />
+  <xs:complexType name="EPInstitucionCompleja2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id_Institucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreInstitucion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EPInstitucionCompleja2" nillable="true" type="tns:EPInstitucionCompleja2" />
+  <xs:complexType name="ArrayOfENEstudiante">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ENEstudiante" nillable="true" type="tns:ENEstudiante" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfENEstudiante" nillable="true" type="tns:ArrayOfENEstudiante" />
+  <xs:complexType name="ENEstudiante">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CedulaIdentidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Celular" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CorreoElectronico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmitidoEn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Carrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Emp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_SedeAcademica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ENEstudiante" nillable="true" type="tns:ENEstudiante" />
+  <xs:complexType name="EPEstudianteCompleja">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CarnetIdentidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCarrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCompleto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EPEstudianteCompleja" nillable="true" type="tns:EPEstudianteCompleja" />
+  <xs:complexType name="EPEstudianteDirectorCarreraCompleja">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CargoDirectorCarrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CarnetIdentidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCarrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCompleto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCompletoDirector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreFacultad" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EPEstudianteDirectorCarreraCompleja" nillable="true" type="tns:EPEstudianteDirectorCarreraCompleja" />
+  <xs:complexType name="EPSolicitud">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CargoResposable" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DireccionInstitucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HorasPasantia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreInstitucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreModalidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreResposable" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EPSolicitud" nillable="true" type="tns:EPSolicitud" />
+  <xs:complexType name="EPPasantiaSimple">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaInicioPasantia" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Horas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Pasantia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Postulacion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EPPasantiaSimple" nillable="true" type="tns:EPPasantiaSimple" />
+  <xs:complexType name="ArrayOfPasantiasCompleja">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PasantiasCompleja" nillable="true" type="tns:PasantiasCompleja" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPasantiasCompleja" nillable="true" type="tns:ArrayOfPasantiasCompleja" />
+  <xs:complexType name="PasantiasCompleja">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdEstudiante" type="xs:int" />
+      <xs:element minOccurs="0" name="IdPasantia" type="xs:int" />
+      <xs:element minOccurs="0" name="IdSedeAcademica" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreModalidad" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PasantiasCompleja" nillable="true" type="tns:PasantiasCompleja" />
+  <xs:complexType name="ArrayOfFacultadCom">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FacultadCom" nillable="true" type="tns:FacultadCom" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFacultadCom" nillable="true" type="tns:ArrayOfFacultadCom" />
+  <xs:complexType name="FacultadCom">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdEstudiante" type="xs:int" />
+      <xs:element minOccurs="0" name="NombeCarrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreFacultad" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FacultadCom" nillable="true" type="tns:FacultadCom" />
+  <xs:complexType name="ArrayOfCiudadCom">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CiudadCom" nillable="true" type="tns:CiudadCom" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCiudadCom" nillable="true" type="tns:ArrayOfCiudadCom" />
+  <xs:complexType name="CiudadCom">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdSedeAcademica" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreSede" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CiudadCom" nillable="true" type="tns:CiudadCom" />
+</xs:schema>

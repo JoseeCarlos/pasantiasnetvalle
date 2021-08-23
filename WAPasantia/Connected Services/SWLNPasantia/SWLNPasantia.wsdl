@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SWLNPasantia" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:54823/SWLNPasantia.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:54823/SWLNPasantia.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:54823/SWLNPasantia.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISWLNPasantia_Adicionar_PPostulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PPostulacion" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Adicionar_PPostulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PPostulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Actualizar_PPostulacion_EstadoAprobado_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPostulacion_EstadoAprobado" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Actualizar_PPostulacion_EstadoAprobado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPostulacion_EstadoAprobadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Actualizar_PPostulacion_EstadoObservado_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPostulacion_EstadoObservado" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Actualizar_PPostulacion_EstadoObservado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPostulacion_EstadoObservadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Actualizar_PPostulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPostulacion" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Actualizar_PPostulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPostulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PPostulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PPostulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PPostulacion_Estado_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Estado" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PPostulacion_Estado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_EstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PPostulacion_Id_Postulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Id_Postulacion" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PPostulacion_Id_Postulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Id_PostulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PPostulacion_Id_Postulacion2_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Id_Postulacion2" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PPostulacion_Id_Postulacion2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PPostulacion_Id_Postulacion2Response" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_BuscarEstududiante_NombreCompleto_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarEstududiante_NombreCompleto" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_BuscarEstududiante_NombreCompleto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarEstududiante_NombreCompletoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_VerificarPostulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarPostulacion" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_VerificarPostulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarPostulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Actualizar_PModalidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PModalidad" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Actualizar_PModalidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PModalidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Adicionar_PModalidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PModalidad" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Adicionar_PModalidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PModalidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PModalidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PModalidad" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PModalidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PModalidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PModalidad_Id_Modalidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PModalidad_Id_Modalidad" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PModalidad_Id_Modalidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PModalidad_Id_ModalidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Adicionar_PInstitucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PInstitucion" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Adicionar_PInstitucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PInstitucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Actualizar_PInstitucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PInstitucion" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Actualizar_PInstitucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PInstitucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PInstitucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucion" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PInstitucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PInstitucion_Id_Institucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucion_Id_Institucion" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PInstitucion_Id_Institucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucion_Id_InstitucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PInstitucion_NombreInstitucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucion_NombreInstitucion" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PInstitucion_NombreInstitucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucion_NombreInstitucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PInstitucionCorta_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucionCorta" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_PInstitucionCorta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_PInstitucionCortaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_NEstudiante_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEstudiante" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_NEstudiante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_NEstudiante_Id_Estudiante_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEstudiante_Id_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_NEstudiante_Id_Estudiante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEstudiante_Id_EstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_NEstudiante_NCarrera_Id_Estudiante_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEstudiante_NCarrera_Id_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_NEstudiante_NCarrera_Id_Estudiante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEstudiante_NCarrera_Id_EstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_InicioSesion_CodigoEstudiante_Contrasena_Estudiante_InputMessage">
+    <wsdl:part name="parameters" element="tns:InicioSesion_CodigoEstudiante_Contrasena_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_InicioSesion_CodigoEstudiante_Contrasena_Estudiante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InicioSesion_CodigoEstudiante_Contrasena_EstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_VerificarPasantia_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarPasantia" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_VerificarPasantia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarPasantiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_NEstudiante_NDirectorCarrera_Id_Estudiante_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEstudiante_NDirectorCarrera_Id_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_NEstudiante_NDirectorCarrera_Id_Estudiante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_NEstudiante_NDirectorCarrera_Id_EstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Verificar_FechaInicio_Id_Estudiante_InputMessage">
+    <wsdl:part name="parameters" element="tns:Verificar_FechaInicio_Id_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Verificar_FechaInicio_Id_Estudiante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Verificar_FechaInicio_Id_EstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Adicionar_PPasantia_InputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PPasantia" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Adicionar_PPasantia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Adicionar_PPasantiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Verificar_FechaInicio_Id_Estudiante_bool_InputMessage">
+    <wsdl:part name="parameters" element="tns:Verificar_FechaInicio_Id_Estudiante_bool" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Verificar_FechaInicio_Id_Estudiante_bool_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Verificar_FechaInicio_Id_Estudiante_boolResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_Datos_Soilicitud_Id_Estudiante_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_Datos_Soilicitud_Id_Estudiante" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Obtener_Datos_Soilicitud_Id_Estudiante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_Datos_Soilicitud_Id_EstudianteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Actualizar_PPasantia_FechaInicio_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPasantia_FechaInicio" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_Actualizar_PPasantia_FechaInicio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_PPasantia_FechaInicioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_ObtenerPasantias_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPasantias" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_ObtenerPasantias_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPasantiasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_ObtenerPasantiasFecha_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPasantiasFecha" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_ObtenerPasantiasFecha_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPasantiasFechaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_ObtenerFacultas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFacultas" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_ObtenerFacultas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFacultasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_ObtenerFacultasFa_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFacultasFa" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_ObtenerFacultasFa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFacultasFaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_ObtenerCiudad_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCiudad" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNPasantia_ObtenerCiudad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCiudadResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISWLNPasantia">
+    <wsdl:operation name="Adicionar_PPostulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Adicionar_PPostulacion" message="tns:ISWLNPasantia_Adicionar_PPostulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Adicionar_PPostulacionResponse" message="tns:ISWLNPasantia_Adicionar_PPostulacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPostulacion_EstadoAprobado">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Actualizar_PPostulacion_EstadoAprobado" message="tns:ISWLNPasantia_Actualizar_PPostulacion_EstadoAprobado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Actualizar_PPostulacion_EstadoAprobadoResponse" message="tns:ISWLNPasantia_Actualizar_PPostulacion_EstadoAprobado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPostulacion_EstadoObservado">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Actualizar_PPostulacion_EstadoObservado" message="tns:ISWLNPasantia_Actualizar_PPostulacion_EstadoObservado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Actualizar_PPostulacion_EstadoObservadoResponse" message="tns:ISWLNPasantia_Actualizar_PPostulacion_EstadoObservado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPostulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Actualizar_PPostulacion" message="tns:ISWLNPasantia_Actualizar_PPostulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Actualizar_PPostulacionResponse" message="tns:ISWLNPasantia_Actualizar_PPostulacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PPostulacion" message="tns:ISWLNPasantia_Obtener_PPostulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PPostulacionResponse" message="tns:ISWLNPasantia_Obtener_PPostulacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Estado">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PPostulacion_Estado" message="tns:ISWLNPasantia_Obtener_PPostulacion_Estado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PPostulacion_EstadoResponse" message="tns:ISWLNPasantia_Obtener_PPostulacion_Estado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Id_Postulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PPostulacion_Id_Postulacion" message="tns:ISWLNPasantia_Obtener_PPostulacion_Id_Postulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PPostulacion_Id_PostulacionResponse" message="tns:ISWLNPasantia_Obtener_PPostulacion_Id_Postulacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Id_Postulacion2">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PPostulacion_Id_Postulacion2" message="tns:ISWLNPasantia_Obtener_PPostulacion_Id_Postulacion2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PPostulacion_Id_Postulacion2Response" message="tns:ISWLNPasantia_Obtener_PPostulacion_Id_Postulacion2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEstududiante_NombreCompleto">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/BuscarEstududiante_NombreCompleto" message="tns:ISWLNPasantia_BuscarEstududiante_NombreCompleto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/BuscarEstududiante_NombreCompletoResponse" message="tns:ISWLNPasantia_BuscarEstududiante_NombreCompleto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarPostulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/VerificarPostulacion" message="tns:ISWLNPasantia_VerificarPostulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/VerificarPostulacionResponse" message="tns:ISWLNPasantia_VerificarPostulacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PModalidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Actualizar_PModalidad" message="tns:ISWLNPasantia_Actualizar_PModalidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Actualizar_PModalidadResponse" message="tns:ISWLNPasantia_Actualizar_PModalidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Adicionar_PModalidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Adicionar_PModalidad" message="tns:ISWLNPasantia_Adicionar_PModalidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Adicionar_PModalidadResponse" message="tns:ISWLNPasantia_Adicionar_PModalidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PModalidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PModalidad" message="tns:ISWLNPasantia_Obtener_PModalidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PModalidadResponse" message="tns:ISWLNPasantia_Obtener_PModalidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PModalidad_Id_Modalidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PModalidad_Id_Modalidad" message="tns:ISWLNPasantia_Obtener_PModalidad_Id_Modalidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PModalidad_Id_ModalidadResponse" message="tns:ISWLNPasantia_Obtener_PModalidad_Id_Modalidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Adicionar_PInstitucion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Adicionar_PInstitucion" message="tns:ISWLNPasantia_Adicionar_PInstitucion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Adicionar_PInstitucionResponse" message="tns:ISWLNPasantia_Adicionar_PInstitucion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PInstitucion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Actualizar_PInstitucion" message="tns:ISWLNPasantia_Actualizar_PInstitucion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Actualizar_PInstitucionResponse" message="tns:ISWLNPasantia_Actualizar_PInstitucion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PInstitucion" message="tns:ISWLNPasantia_Obtener_PInstitucion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PInstitucionResponse" message="tns:ISWLNPasantia_Obtener_PInstitucion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucion_Id_Institucion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PInstitucion_Id_Institucion" message="tns:ISWLNPasantia_Obtener_PInstitucion_Id_Institucion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PInstitucion_Id_InstitucionResponse" message="tns:ISWLNPasantia_Obtener_PInstitucion_Id_Institucion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucion_NombreInstitucion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PInstitucion_NombreInstitucion" message="tns:ISWLNPasantia_Obtener_PInstitucion_NombreInstitucion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PInstitucion_NombreInstitucionResponse" message="tns:ISWLNPasantia_Obtener_PInstitucion_NombreInstitucion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucionCorta">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PInstitucionCorta" message="tns:ISWLNPasantia_Obtener_PInstitucionCorta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_PInstitucionCortaResponse" message="tns:ISWLNPasantia_Obtener_PInstitucionCorta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEstudiante">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_NEstudiante" message="tns:ISWLNPasantia_Obtener_NEstudiante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_NEstudianteResponse" message="tns:ISWLNPasantia_Obtener_NEstudiante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEstudiante_Id_Estudiante">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_NEstudiante_Id_Estudiante" message="tns:ISWLNPasantia_Obtener_NEstudiante_Id_Estudiante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_NEstudiante_Id_EstudianteResponse" message="tns:ISWLNPasantia_Obtener_NEstudiante_Id_Estudiante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEstudiante_NCarrera_Id_Estudiante">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_NEstudiante_NCarrera_Id_Estudiante" message="tns:ISWLNPasantia_Obtener_NEstudiante_NCarrera_Id_Estudiante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_NEstudiante_NCarrera_Id_EstudianteResponse" message="tns:ISWLNPasantia_Obtener_NEstudiante_NCarrera_Id_Estudiante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InicioSesion_CodigoEstudiante_Contrasena_Estudiante">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/InicioSesion_CodigoEstudiante_Contrasena_Estudiante" message="tns:ISWLNPasantia_InicioSesion_CodigoEstudiante_Contrasena_Estudiante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/InicioSesion_CodigoEstudiante_Contrasena_EstudianteResponse" message="tns:ISWLNPasantia_InicioSesion_CodigoEstudiante_Contrasena_Estudiante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarPasantia">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/VerificarPasantia" message="tns:ISWLNPasantia_VerificarPasantia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/VerificarPasantiaResponse" message="tns:ISWLNPasantia_VerificarPasantia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEstudiante_NDirectorCarrera_Id_Estudiante">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_NEstudiante_NDirectorCarrera_Id_Estudiante" message="tns:ISWLNPasantia_Obtener_NEstudiante_NDirectorCarrera_Id_Estudiante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_NEstudiante_NDirectorCarrera_Id_EstudianteResponse" message="tns:ISWLNPasantia_Obtener_NEstudiante_NDirectorCarrera_Id_Estudiante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Verificar_FechaInicio_Id_Estudiante">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Verificar_FechaInicio_Id_Estudiante" message="tns:ISWLNPasantia_Verificar_FechaInicio_Id_Estudiante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Verificar_FechaInicio_Id_EstudianteResponse" message="tns:ISWLNPasantia_Verificar_FechaInicio_Id_Estudiante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Adicionar_PPasantia">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Adicionar_PPasantia" message="tns:ISWLNPasantia_Adicionar_PPasantia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Adicionar_PPasantiaResponse" message="tns:ISWLNPasantia_Adicionar_PPasantia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Verificar_FechaInicio_Id_Estudiante_bool">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Verificar_FechaInicio_Id_Estudiante_bool" message="tns:ISWLNPasantia_Verificar_FechaInicio_Id_Estudiante_bool_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Verificar_FechaInicio_Id_Estudiante_boolResponse" message="tns:ISWLNPasantia_Verificar_FechaInicio_Id_Estudiante_bool_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_Datos_Soilicitud_Id_Estudiante">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_Datos_Soilicitud_Id_Estudiante" message="tns:ISWLNPasantia_Obtener_Datos_Soilicitud_Id_Estudiante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Obtener_Datos_Soilicitud_Id_EstudianteResponse" message="tns:ISWLNPasantia_Obtener_Datos_Soilicitud_Id_Estudiante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPasantia_FechaInicio">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/Actualizar_PPasantia_FechaInicio" message="tns:ISWLNPasantia_Actualizar_PPasantia_FechaInicio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/Actualizar_PPasantia_FechaInicioResponse" message="tns:ISWLNPasantia_Actualizar_PPasantia_FechaInicio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPasantias">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/ObtenerPasantias" message="tns:ISWLNPasantia_ObtenerPasantias_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/ObtenerPasantiasResponse" message="tns:ISWLNPasantia_ObtenerPasantias_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPasantiasFecha">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/ObtenerPasantiasFecha" message="tns:ISWLNPasantia_ObtenerPasantiasFecha_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/ObtenerPasantiasFechaResponse" message="tns:ISWLNPasantia_ObtenerPasantiasFecha_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerFacultas">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/ObtenerFacultas" message="tns:ISWLNPasantia_ObtenerFacultas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/ObtenerFacultasResponse" message="tns:ISWLNPasantia_ObtenerFacultas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerFacultasFa">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/ObtenerFacultasFa" message="tns:ISWLNPasantia_ObtenerFacultasFa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/ObtenerFacultasFaResponse" message="tns:ISWLNPasantia_ObtenerFacultasFa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCiudad">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNPasantia/ObtenerCiudad" message="tns:ISWLNPasantia_ObtenerCiudad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNPasantia/ObtenerCiudadResponse" message="tns:ISWLNPasantia_ObtenerCiudad_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISWLNPasantia" type="tns:ISWLNPasantia">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Adicionar_PPostulacion">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Adicionar_PPostulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPostulacion_EstadoAprobado">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Actualizar_PPostulacion_EstadoAprobado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPostulacion_EstadoObservado">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Actualizar_PPostulacion_EstadoObservado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPostulacion">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Actualizar_PPostulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_PPostulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Estado">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_PPostulacion_Estado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Id_Postulacion">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_PPostulacion_Id_Postulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PPostulacion_Id_Postulacion2">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_PPostulacion_Id_Postulacion2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEstududiante_NombreCompleto">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/BuscarEstududiante_NombreCompleto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarPostulacion">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/VerificarPostulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PModalidad">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Actualizar_PModalidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Adicionar_PModalidad">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Adicionar_PModalidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PModalidad">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_PModalidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PModalidad_Id_Modalidad">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_PModalidad_Id_Modalidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Adicionar_PInstitucion">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Adicionar_PInstitucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PInstitucion">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Actualizar_PInstitucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucion">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_PInstitucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucion_Id_Institucion">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_PInstitucion_Id_Institucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucion_NombreInstitucion">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_PInstitucion_NombreInstitucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_PInstitucionCorta">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_PInstitucionCorta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEstudiante">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_NEstudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEstudiante_Id_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_NEstudiante_Id_Estudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEstudiante_NCarrera_Id_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_NEstudiante_NCarrera_Id_Estudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InicioSesion_CodigoEstudiante_Contrasena_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/InicioSesion_CodigoEstudiante_Contrasena_Estudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarPasantia">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/VerificarPasantia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_NEstudiante_NDirectorCarrera_Id_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_NEstudiante_NDirectorCarrera_Id_Estudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Verificar_FechaInicio_Id_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Verificar_FechaInicio_Id_Estudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Adicionar_PPasantia">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Adicionar_PPasantia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Verificar_FechaInicio_Id_Estudiante_bool">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Verificar_FechaInicio_Id_Estudiante_bool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_Datos_Soilicitud_Id_Estudiante">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Obtener_Datos_Soilicitud_Id_Estudiante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_PPasantia_FechaInicio">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/Actualizar_PPasantia_FechaInicio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPasantias">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/ObtenerPasantias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPasantiasFecha">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/ObtenerPasantiasFecha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerFacultas">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/ObtenerFacultas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerFacultasFa">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/ObtenerFacultasFa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCiudad">
+      <soap:operation soapAction="http://tempuri.org/ISWLNPasantia/ObtenerCiudad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SWLNPasantia">
+    <wsdl:port name="BasicHttpBinding_ISWLNPasantia" binding="tns:BasicHttpBinding_ISWLNPasantia">
+      <soap:address location="http://localhost:54823/SWLNPasantia.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

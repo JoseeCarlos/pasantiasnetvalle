@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DTOPSolicitud" targetNamespace="http://tempuri.org/DTOPSolicitud.xsd" xmlns:mstns="http://tempuri.org/DTOPSolicitud.xsd" xmlns="http://tempuri.org/DTOPSolicitud.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="NETPASANTIAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="NETPASANTIAConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.NETPASANTIAConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_SolicitudTableAdapter" GeneratorDataComponentClassName="v_SolicitudTableAdapter" Name="v_Solicitud" UserDataComponentName="v_SolicitudTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="NETPASANTIAConnectionString (Web.config)" DbObjectName="NETPASANTIA.dbo.v_Solicitud" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NombreResponsable, CargoResponsable, NombreInstitucion, DireccionInstitucion, NombreModalidad, Horas FROM dbo.v_Solicitud</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NombreResponsable" DataSetColumn="NombreResponsable" />
+              <Mapping SourceColumn="CargoResponsable" DataSetColumn="CargoResponsable" />
+              <Mapping SourceColumn="NombreInstitucion" DataSetColumn="NombreInstitucion" />
+              <Mapping SourceColumn="DireccionInstitucion" DataSetColumn="DireccionInstitucion" />
+              <Mapping SourceColumn="NombreModalidad" DataSetColumn="NombreModalidad" />
+              <Mapping SourceColumn="Horas" DataSetColumn="Horas" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DTOPSolicitud" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DTOPSolicitud" msprop:Generator_UserDSName="DTOPSolicitud">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_Solicitud" msprop:Generator_TableClassName="v_SolicitudDataTable" msprop:Generator_TableVarName="tablev_Solicitud" msprop:Generator_TablePropName="v_Solicitud" msprop:Generator_RowDeletingName="v_SolicitudRowDeleting" msprop:Generator_RowChangingName="v_SolicitudRowChanging" msprop:Generator_RowEvHandlerName="v_SolicitudRowChangeEventHandler" msprop:Generator_RowDeletedName="v_SolicitudRowDeleted" msprop:Generator_UserTableName="v_Solicitud" msprop:Generator_RowChangedName="v_SolicitudRowChanged" msprop:Generator_RowEvArgName="v_SolicitudRowChangeEvent" msprop:Generator_RowClassName="v_SolicitudRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NombreResponsable" msprop:Generator_ColumnVarNameInTable="columnNombreResponsable" msprop:Generator_ColumnPropNameInRow="NombreResponsable" msprop:Generator_ColumnPropNameInTable="NombreResponsableColumn" msprop:Generator_UserColumnName="NombreResponsable">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CargoResponsable" msprop:Generator_ColumnVarNameInTable="columnCargoResponsable" msprop:Generator_ColumnPropNameInRow="CargoResponsable" msprop:Generator_ColumnPropNameInTable="CargoResponsableColumn" msprop:Generator_UserColumnName="CargoResponsable">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreInstitucion" msprop:Generator_ColumnVarNameInTable="columnNombreInstitucion" msprop:Generator_ColumnPropNameInRow="NombreInstitucion" msprop:Generator_ColumnPropNameInTable="NombreInstitucionColumn" msprop:Generator_UserColumnName="NombreInstitucion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DireccionInstitucion" msprop:Generator_ColumnVarNameInTable="columnDireccionInstitucion" msprop:Generator_ColumnPropNameInRow="DireccionInstitucion" msprop:Generator_ColumnPropNameInTable="DireccionInstitucionColumn" msprop:Generator_UserColumnName="DireccionInstitucion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreModalidad" msprop:Generator_ColumnVarNameInTable="columnNombreModalidad" msprop:Generator_ColumnPropNameInRow="NombreModalidad" msprop:Generator_ColumnPropNameInTable="NombreModalidadColumn" msprop:Generator_UserColumnName="NombreModalidad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Horas" msprop:Generator_ColumnVarNameInTable="columnHoras" msprop:Generator_ColumnPropNameInRow="Horas" msprop:Generator_ColumnPropNameInTable="HorasColumn" msprop:Generator_UserColumnName="Horas">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

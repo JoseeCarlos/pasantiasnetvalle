@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfENCiudad">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ENCiudad" nillable="true" type="tns:ENCiudad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfENCiudad" nillable="true" type="tns:ArrayOfENCiudad" />
+  <xs:complexType name="ENCiudad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Emp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCiudad" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ENCiudad" nillable="true" type="tns:ENCiudad" />
+  <xs:complexType name="ArrayOfCiudad">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Ciudad" nillable="true" type="tns:Ciudad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCiudad" nillable="true" type="tns:ArrayOfCiudad" />
+  <xs:complexType name="Ciudad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdSedeAcademica" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreSede" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Ciudad" nillable="true" type="tns:Ciudad" />
+  <xs:complexType name="ArrayOfFacultad">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Facultad" nillable="true" type="tns:Facultad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFacultad" nillable="true" type="tns:ArrayOfFacultad" />
+  <xs:complexType name="Facultad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdEstudiante" type="xs:int" />
+      <xs:element minOccurs="0" name="NombeCarrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreFacultad" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Facultad" nillable="true" type="tns:Facultad" />
+  <xs:complexType name="ENCarrera">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Carrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Emp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Facultad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCarrera" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ENCarrera" nillable="true" type="tns:ENCarrera" />
+  <xs:complexType name="ArrayOfENEmpleadoSimple">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ENEmpleadoSimple" nillable="true" type="tns:ENEmpleadoSimple" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfENEmpleadoSimple" nillable="true" type="tns:ArrayOfENEmpleadoSimple" />
+  <xs:complexType name="ENEmpleadoSimple">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Emp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Empleado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ENEmpleadoSimple" nillable="true" type="tns:ENEmpleadoSimple" />
+  <xs:complexType name="ArrayOfENEstudiante">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ENEstudiante" nillable="true" type="tns:ENEstudiante" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfENEstudiante" nillable="true" type="tns:ArrayOfENEstudiante" />
+  <xs:complexType name="ENEstudiante">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CedulaIdentidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Celular" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CorreoElectronico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmitidoEn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Carrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Emp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Estudiante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_SedeAcademica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ENEstudiante" nillable="true" type="tns:ENEstudiante" />
+  <xs:complexType name="ArrayOfENSedeAcademica">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ENSedeAcademica" nillable="true" type="tns:ENSedeAcademica" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfENSedeAcademica" nillable="true" type="tns:ArrayOfENSedeAcademica" />
+  <xs:complexType name="ENSedeAcademica">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Emp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_SedeAcademica" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ENSedeAcademica" nillable="true" type="tns:ENSedeAcademica" />
+  <xs:complexType name="ENCargo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Emp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCargo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ENCargo" nillable="true" type="tns:ENCargo" />
+  <xs:complexType name="ArrayOfENFacultad">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ENFacultad" nillable="true" type="tns:ENFacultad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfENFacultad" nillable="true" type="tns:ArrayOfENFacultad" />
+  <xs:complexType name="ENFacultad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Emp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Facultad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreFacultad" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ENFacultad" nillable="true" type="tns:ENFacultad" />
+  <xs:complexType name="ENDirectorCarrera">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Carrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_DirectorCarrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Emp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ENDirectorCarrera" nillable="true" type="tns:ENDirectorCarrera" />
+</xs:schema>

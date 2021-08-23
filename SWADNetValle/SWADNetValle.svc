@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SWADNetValle" CodeBehind="~/App_Code/SWADNetValle.cs" %>

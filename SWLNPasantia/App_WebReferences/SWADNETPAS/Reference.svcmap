@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4023f66d-a4a8-47cd-8348-0fd99e741014" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:63193/SWADNETPAS.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SWADNETPAS.xsd" MetadataType="Schema" ID="4fa2ada0-d2dc-4eda-9be6-81837b7f0461" SourceId="1" SourceUrl="http://localhost:63193/SWADNETPAS.svc?xsd=xsd0" />
+    <MetadataFile FileName="SWADNETPAS.disco" MetadataType="Disco" ID="ca5542a4-337f-42c0-89c5-6ff6bc82ea55" SourceId="1" SourceUrl="http://localhost:63193/SWADNETPAS.svc?disco" />
+    <MetadataFile FileName="SWADNETPAS1.xsd" MetadataType="Schema" ID="1c59404a-8f77-4848-9c10-57806cd9ed7f" SourceId="1" SourceUrl="http://localhost:63193/SWADNETPAS.svc?xsd=xsd2" />
+    <MetadataFile FileName="SWADNETPAS2.xsd" MetadataType="Schema" ID="9b8647e6-734b-4d6a-99fd-0e7576267d67" SourceId="1" SourceUrl="http://localhost:63193/SWADNETPAS.svc?xsd=xsd1" />
+    <MetadataFile FileName="SWADNETPAS.wsdl" MetadataType="Wsdl" ID="afa3abd9-1c8e-45fb-9d0f-b58b601ed728" SourceId="1" SourceUrl="http://localhost:63193/SWADNETPAS.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

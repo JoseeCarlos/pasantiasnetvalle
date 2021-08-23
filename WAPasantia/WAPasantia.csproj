@@ -1,0 +1,523 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16C161A2-E51D-4BAE-A7EC-831CC0C06576}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WAPasantia</RootNamespace>
+    <AssemblyName>WAPasantia</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SWLNPasantia\SWLNPasantia.disco" />
+    <None Include="Connected Services\SWLNPasantia\configuration91.svcinfo" />
+    <None Include="Connected Services\SWLNPasantia\configuration.svcinfo" />
+    <None Include="Connected Services\SWLNPasantia\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Email\CORREO.html" />
+    <Content Include="Email\EmailAceptado.html" />
+    <Content Include="Email\EmailCartaAceptacion.html" />
+    <Content Include="Email\EmailHoras.html" />
+    <Content Include="Email\EmailRechazado.html" />
+    <Content Include="Email\uni.png" />
+    <Content Include="Estilo\Nuevo documento de texto.txt" />
+    <Content Include="Estilo\SEstilo.css" />
+    <Content Include="Estilo\SEstiloFormulario.css" />
+    <Content Include="Estilo\SEstiloInicioCartaConvenio.css" />
+    <Content Include="Estilo\SGridView.css" />
+    <Content Include="Estilo\SModal.css" />
+    <Content Include="Estilo\SNotificacion.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Imagenes\bullet_selected.png" />
+    <Content Include="Imagenes\campanita.png" />
+    <Content Include="Imagenes\footer_background.png" />
+    <Content Include="Imagenes\footer_image_left.png" />
+    <Content Include="Imagenes\footer_image_right.png" />
+    <Content Include="Imagenes\header_background.png" />
+    <Content Include="Imagenes\logo.png" />
+    <Content Include="Imagenes\Logo_Carta.jpg" />
+    <Content Include="Imagenes\Nuevo documento de texto.txt" />
+    <Content Include="Imagenes\perfil.png" />
+    <Content Include="Js\JCartaInicioConvenio.js" />
+    <Content Include="Js\PModal.js" />
+    <Content Include="Js\PModalAgregarEmpresa.js" />
+    <Content Include="Js\PModalAlertaJefeCarrera.js" />
+    <Content Include="Js\PModalFormularioPasantia.js" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\0.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\1.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\2.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\3.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\4.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\5.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\6.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\7.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\8.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\9.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\BanderaBoliviaDefault.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\calendar_icon.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\Center5x5.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\EstiloRecordarPIN.css" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\EstiloRegistrarSolicitud.css" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\EstiloSan.css" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\gs_noscript_130-65_en.gif" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\IniciarSessionPlano130x22.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\JTecladoNumerico.js" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\LetrasSan106x36.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\Limpiar.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\LogoSan106x70.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\LogoUnivalle260x55.png" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\PDesbloquearCuenta.html" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\PRecordarPIN.html" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\PRegistrarSolicitud.html" />
+    <Content Include="Reportes\Nuevo documento de texto.txt" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm\PFormularioPasantia.aspx" />
+    <Content Include="WebForm\PInicioCartaConvenio.aspx" />
+    <Content Include="WebForm\PLista.aspx" />
+    <Content Include="WebForm\PMenu.aspx" />
+    <Content Include="WebForm\PMenuJefeDeCarrera.aspx" />
+    <Content Include="WebForm\PMenuSecretariaCarrera.aspx" />
+    <Content Include="WebForm\PMenuSecretariaInternacional.aspx" />
+    <Content Include="WebForm\PReportes.aspx" />
+    <Content Include="WebForm\PSeguimiento.aspx" />
+    <Content Include="WebForm\PSolicitudAceptadaDirectorCarrera.aspx" />
+    <Content Include="WebForm\PSolicitudFinalizada.aspx" />
+    <Content Include="WebForm\PSolicitudPasantia.aspx" />
+    <Content Include="WebForm\PSolicitudPasantiaSecretaria.aspx" />
+    <Content Include="WebForm\PSubirArchivos.aspx" />
+    <Content Include="WebForm\PVerDetallePasantia.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connected Services\SWLNPasantia\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Email\Correo.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaMaestra\MPAdministrativo.Master.cs">
+      <DependentUpon>MPAdministrativo.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaMaestra\MPAdministrativo.Master.designer.cs">
+      <DependentUpon>MPAdministrativo.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaMaestra\MPInicio.Master.cs">
+      <DependentUpon>MPInicio.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaMaestra\MPInicio.Master.designer.cs">
+      <DependentUpon>MPInicio.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\Reporte1.cs" />
+    <Compile Include="Reportes\ReporteFacultad1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteFacultad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteGeneral1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteGeneral.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\RFacultadFecha1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RFacultadFecha.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\RGeneralFecha1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RGeneralFecha.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebForm\PFormularioPasantia.aspx.cs">
+      <DependentUpon>PFormularioPasantia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PFormularioPasantia.aspx.designer.cs">
+      <DependentUpon>PFormularioPasantia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PInicioCartaConvenio.aspx.cs">
+      <DependentUpon>PInicioCartaConvenio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PInicioCartaConvenio.aspx.designer.cs">
+      <DependentUpon>PInicioCartaConvenio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PLista.aspx.cs">
+      <DependentUpon>PLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PLista.aspx.designer.cs">
+      <DependentUpon>PLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PMenu.aspx.cs">
+      <DependentUpon>PMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PMenu.aspx.designer.cs">
+      <DependentUpon>PMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PMenuJefeDeCarrera.aspx.cs">
+      <DependentUpon>PMenuJefeDeCarrera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PMenuJefeDeCarrera.aspx.designer.cs">
+      <DependentUpon>PMenuJefeDeCarrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PMenuSecretariaCarrera.aspx.cs">
+      <DependentUpon>PMenuSecretariaCarrera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PMenuSecretariaCarrera.aspx.designer.cs">
+      <DependentUpon>PMenuSecretariaCarrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PMenuSecretariaInternacional.aspx.cs">
+      <DependentUpon>PMenuSecretariaInternacional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PMenuSecretariaInternacional.aspx.designer.cs">
+      <DependentUpon>PMenuSecretariaInternacional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PReportes.aspx.cs">
+      <DependentUpon>PReportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PReportes.aspx.designer.cs">
+      <DependentUpon>PReportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PSeguimiento.aspx.cs">
+      <DependentUpon>PSeguimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PSeguimiento.aspx.designer.cs">
+      <DependentUpon>PSeguimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PSolicitudAceptadaDirectorCarrera.aspx.cs">
+      <DependentUpon>PSolicitudAceptadaDirectorCarrera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PSolicitudAceptadaDirectorCarrera.aspx.designer.cs">
+      <DependentUpon>PSolicitudAceptadaDirectorCarrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PSolicitudFinalizada.aspx.cs">
+      <DependentUpon>PSolicitudFinalizada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PSolicitudFinalizada.aspx.designer.cs">
+      <DependentUpon>PSolicitudFinalizada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PSolicitudPasantia.aspx.cs">
+      <DependentUpon>PSolicitudPasantia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PSolicitudPasantia.aspx.designer.cs">
+      <DependentUpon>PSolicitudPasantia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PSolicitudPasantiaSecretaria.aspx.cs">
+      <DependentUpon>PSolicitudPasantiaSecretaria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PSolicitudPasantiaSecretaria.aspx.designer.cs">
+      <DependentUpon>PSolicitudPasantiaSecretaria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PSubirArchivos.aspx.cs">
+      <DependentUpon>PSubirArchivos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PSubirArchivos.aspx.designer.cs">
+      <DependentUpon>PSubirArchivos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PVerDetallePasantia.aspx.cs">
+      <DependentUpon>PVerDetallePasantia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PVerDetallePasantia.aspx.designer.cs">
+      <DependentUpon>PVerDetallePasantia.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Login\Servicio de autenticación Netvalle_files\enlace.univalle.edu" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\gs_flash_130-65_en.js.descarga" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\JSRecordarPIN.js.descarga" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\JSSolicitarUsuario.js.descarga" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%281%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%2810%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%2811%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%2812%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%2813%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%2814%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%2815%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%2816%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%2817%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%2818%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%2819%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%282%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%2820%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%283%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%284%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%285%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%286%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%287%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%288%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource%289%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\ScriptResource.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\WebResource%281%29.axd" />
+    <Content Include="Login\Servicio de autenticación Netvalle_files\WebResource.axd" />
+    <None Include="Connected Services\SWLNPasantia\SWLNPasantia.wsdl" />
+    <None Include="Connected Services\SWLNPasantia\SWLNPasantia.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SWLNPasantia\SWLNPasantia1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SWLNPasantia\SWLNPasantia2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\SWLNPasantia\WAPasantia.SWLNPasantia.ENEstudiante.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SWLNPasantia\WAPasantia.SWLNPasantia.EPEstudianteCompleja.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SWLNPasantia\WAPasantia.SWLNPasantia.EPEstudianteDirectorCarreraCompleja.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SWLNPasantia\WAPasantia.SWLNPasantia.EPInstitucionCompleja.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SWLNPasantia\WAPasantia.SWLNPasantia.EPInstitucionCompleja2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SWLNPasantia\WAPasantia.SWLNPasantia.EPModalidadSimple.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SWLNPasantia\WAPasantia.SWLNPasantia.EPPostulacionCompleja.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SWLNPasantia\WAPasantia.SWLNPasantia.EPPostulacionCompleja2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SWLNPasantia\WAPasantia.SWLNPasantia.EPPostulacionCompleja3.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SWLNPasantia\WAPasantia.SWLNPasantia.EPSolicitud.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SWLNPasantia\WAPasantia.SWLNPasantia.PasantiasCompleja.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SWLNPasantia\WAPasantia.SWLNPasantia.CiudadCom.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SWLNPasantia\WAPasantia.SWLNPasantia.FacultadCom.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="PaginaMaestra\MPAdministrativo.Master" />
+    <Content Include="PaginaMaestra\MPInicio.Master" />
+    <Content Include="Reportes\Reportes.xsc">
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </Content>
+    <None Include="Reportes\Reportes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reportes.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reportes\Reportes.xss">
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\SWLNPasantia\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reportes\ReporteFacultad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteFacultad1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteGeneral.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteGeneral1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RFacultadFecha.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RFacultadFecha1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RGeneralFecha.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RGeneralFecha1.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63187</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63187/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

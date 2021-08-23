@@ -1,0 +1,13 @@
+﻿
+.linkNoticacion {
+    text-decoration: none;
+    font-family: "BBAlpha Sans", "Prelude Medium", "S60 Sans", Tahoma, Verdana, Arial, "Sans-Serif";
+    font-size: 11px;
+    color: black;
+}
+
+.lblNotificacion {
+    font-family: "BBAlpha Sans", "Prelude Medium", "S60 Sans", Tahoma, Verdana, Arial, "Sans-Serif";
+    font-size: 11px;
+    color: red;
+}

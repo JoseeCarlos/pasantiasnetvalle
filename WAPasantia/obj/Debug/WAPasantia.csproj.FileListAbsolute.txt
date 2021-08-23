@@ -1,0 +1,172 @@
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\WAPasantia.dll.config
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\WAPasantia.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\WAPasantia.pdb
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\csc.exe
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\csc.exe.config
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\csc.rsp
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\csi.exe
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\csi.exe.config
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\csi.rsp
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\Microsoft.CodeAnalysis.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\Microsoft.CSharp.Core.targets
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\Microsoft.Managed.Core.targets
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\Microsoft.VisualBasic.Core.targets
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.AppContext.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Collections.Immutable.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Console.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Diagnostics.StackTrace.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.IO.Compression.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.IO.FileSystem.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.IO.FileSystem.Primitives.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.IO.Pipes.AccessControl.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.IO.Pipes.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Reflection.Metadata.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Security.AccessControl.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Security.Claims.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Security.Cryptography.Encoding.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Security.Cryptography.Primitives.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Security.Principal.Windows.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Text.Encoding.CodePages.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.ValueTuple.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Xml.ReaderWriter.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Xml.XmlDocument.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Xml.XPath.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\System.Xml.XPath.XDocument.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\vbc.exe
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\vbc.exe.config
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\vbc.rsp
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\VBCSCompiler.exe
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\roslyn\VBCSCompiler.exe.config
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\obj\Debug\WAPasantia.csprojAssemblyReference.cache
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\obj\Debug\WAPasantia.csproj.CoreCompileInputs.cache
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\obj\Debug\WAPasantia.csproj.CopyComplete
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\obj\Debug\WAPasantia.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\obj\Debug\WAPasantia.pdb
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.CrystalReports.Engine.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportSource.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.Shared.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.Web.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\stdole.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\obj\Debug\WAPasantia.csproj.ResolveComReference.cache
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.Practices.Unity.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.Practices.ServiceLocation.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.Practices.Unity.Interception.dll
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.Practices.Unity.pdb
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.Practices.ServiceLocation.pdb
+U:\5to Semestre\Proyecto de Sistemas II\Equipo Amarillo\Proyecto_Final\WAPasantia\WAPasantia\bin\Microsoft.Practices.Unity.Interception.pdb
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\WAPasantia.dll.config
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\WAPasantia.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\WAPasantia.pdb
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\csc.exe
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\csc.exe.config
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\csc.rsp
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\csi.exe
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\csi.exe.config
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\csi.rsp
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.AppContext.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Console.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.IO.Compression.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.IO.Pipes.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Security.Claims.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.ValueTuple.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\vbc.exe
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\vbc.exe.config
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\vbc.rsp
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\VBCSCompiler.exe
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportSource.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.Shared.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.Web.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.Practices.Unity.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.Practices.Unity.Interception.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\stdole.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.Practices.Unity.pdb
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\bin\Microsoft.Practices.Unity.Interception.pdb
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\obj\Debug\WAPasantia.csproj.AssemblyReference.cache
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\obj\Debug\WAPasantia.csproj.ResolveComReference.cache
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\obj\Debug\WAPasantia.csproj.CoreCompileInputs.cache
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\obj\Debug\WAPasantia.csproj.CopyComplete
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\obj\Debug\WAPasantia.dll
+C:\Users\jose\Desktop\5toSemestre\ProyectoSistemas\WAPasantia\WAPasantia\obj\Debug\WAPasantia.pdb
